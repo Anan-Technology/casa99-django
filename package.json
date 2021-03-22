@@ -1,0 +1,13 @@
+{
+  "name": "k99-front-end-html",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "serve": "serve ./",
+    "node-sass": "node-sass --watch --output-style compressed static/scss/index.scss static/css/index.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
