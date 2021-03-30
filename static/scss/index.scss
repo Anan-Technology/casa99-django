@@ -16,15 +16,17 @@ $device-lg: "(max-width: 1200px)";
 
 @import "owl.carousel.min";
 @import "owl";
-@import "header.scss";
-@import "content.scss";
-@import "components.scss";
+@import "header";
+@import "content";
+@import "components";
+@import "footer";
 
 body {
   margin: 0;
   font-family: "Kantumruy", sans-serif;
   background-color: $black;
   padding: 0;
+  list-style: 1.6;
 }
 a {
   text-decoration: none;
