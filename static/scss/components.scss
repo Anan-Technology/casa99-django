@@ -4,6 +4,9 @@
 .m-0 {
   margin: 0;
 }
+.w-100 {
+  width: 100%;
+}
 .label-h {
   background: $gradient;
   -webkit-background-clip: text;
@@ -13,6 +16,7 @@
 }
 .zoom {
   transform: none;
+  cursor: pointer;
   &:hover {
     transform: scale(1.1);
   }
@@ -39,13 +43,25 @@
   border: none;
   outline: none;
   border-radius: 3px;
-  max-width: 150px;
+  min-width: 150px;
   background: $gray;
   color: $white;
+  box-sizing: border-box;
   ::placeholder {
     color: $gray2;
     font-family: "Kantumruy", sans-serif !important;
   }
+}
+select {
+  font-size: 18px;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  outline: none;
+  border-radius: 3px;
+  box-sizing: border-box;
+  background: $gray;
+  color: $white;
 }
 .H1 {
   padding: 10px 0;
@@ -77,7 +93,7 @@
   margin-top: 20px;
   font-size: 17px;
   margin: 10px 0;
-  @media (max-width: $sm){
+  @media (max-width: $sm) {
     cursor: pointer;
   }
 }
@@ -86,8 +102,70 @@
   padding: 10px 0;
 }
 
-.sm-hidden{
+.sm-hidden {
   @media (max-width: $sm) {
-      display: none;
+    display: none;
+  }
+}
+.d-hidden {
+  @media (min-width: $sm) {
+    display: none;
+  }
+}
+.bg-black {
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.8);
+  transition: 0.3s;
+}
+
+.mobile-btn-auth {
+  margin-left: 20px;
+  img {
+    margin-bottom: 30px;
+    margin-left: 10px;
+  }
+}
+.game-card {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  > div {
+    margin: 0;
+    border-radius: 5px !important;
+    background: #fff;
+    width: 100%;
+    height: 170px;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-clip: padding-box;
+    border: solid 3px transparent;
+    @media (max-width: $sm) {
+      height: 100px;
     }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+      margin: -5px;
+      border-radius: inherit;
+      background: $gradient;
+    }
+  }
+  p {
+    font-size: 16px;
+    color: $white;
+    text-align: center;
+  }
 }

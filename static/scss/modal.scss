@@ -1,0 +1,36 @@
+.k-modal {
+  border-radius: 10px;
+  padding: 20px;
+  background: $black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  .m-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    h2 {
+      color: $white;
+      padding: 0;
+    }
+    span {
+      cursor: pointer;
+      width: 50px;
+      height: 50px;
+      margin-top: 10px;
+      padding: 10px;
+      background: $gray;
+      border-radius: 5px;
+      position: relative;
+      .fa {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 20px;
+        color: #fff;
+      }
+    }
+  }
+}

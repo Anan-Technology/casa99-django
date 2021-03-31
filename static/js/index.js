@@ -60,3 +60,29 @@ $('#btn-menu').on('click', function () {
     });
 })
 
+$('.colse-modal').on('click', function () {
+    $('body').find('.bg-black').css({ 'display': 'none' })
+})
+
+
+function OpenSignUp() {
+    $('#signup-modal').css({ 'display': 'block' })
+}
+
+function OpenLogin() {
+    $('#login-modal').css({ 'display': 'block' })
+}
+
+
+var contactItem = $('#contact-wrapp').children()
+
+
+for (let i = 0; i <= contactItem.length; i++) {
+    $(contactItem[i]).on('mouseover', function () {
+        $(this).css({ 'transform': 'translate(0, -50%)' });
+    })
+    $(contactItem[i]).on('mouseout', function () {
+        $(this).css({ 'transform': 'translate(180px, -50%)' });
+    })
+
+}
