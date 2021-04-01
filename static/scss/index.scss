@@ -43,8 +43,9 @@ body {
   font-family: "Kantumruy", sans-serif;
   background-color: $black;
   padding: 0;
-  list-style: 1.6;
+  line-height: 1.6;
   position: relative;
+  overflow-x: hidden;
 }
 a {
   text-decoration: none;
