@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+{% load bootstrap_form from bootstrap4 %}
+<html lang="en">
+
+<head>
+    <title>ZATIN</title>
+    {% block meta %}
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ZatinFolio" name="ZatinFolio">
+        <meta content="Zatin Folio in Work Experienced" name="Zatin Folio in Work Experienced">
+    {% endblock meta %}
+    <!-- Favicons -->
+    <link href="{% static "img/zatin-icon.jpg" %}" rel="icon">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155374223-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155374223-2');
+    </script>
+
+    <!-- Bootstrap CSS File -->
+    <link href="{% static "lib/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="{% static "lib/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/animate/animate.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/ionicons/css/ionicons.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/owlcarousel/assets/owl.carousel.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/lightbox/css/lightbox.min.css" %}" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <!-- =======================================================
+      Theme Name: DevFolio
+      Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+      Author: BootstrapMade.com
+      License: https://bootstrapmade.com/license/
+      EDIT BY : ZATIN
+    ======================================================= -->
+</head>
+
+<body id="page-top">
+
+<!--/ Nav Star /-->
+<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container">
+        <a class="navbar-brand js-scroll" href="#page-top">ZatinFolio</a>
+        <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
+                aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+        <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link js-scroll active" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll" href="#service">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll" href="#social-activities">Activities </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll" href="#complete-course">Completed-Courses</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link js-scroll" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<!--/ Nav End /-->
+
+<!--/ Intro Skew Star /-->
+<div id="home" class="intro route bg-image intro-cover">
+    <div class=""></div>
+    <div class="intro-content display-table">
+        <div class="table-cell">
+            <div class="container">
+                <form action="{% url 'projects:projects' %}">
+                    <br><br><br><br><br><br><br><br><br><br><br>
+                    <button type="submit" class="project-button">
+                        {% trans "My Projects" context "Projects Description" %}
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ Intro Skew End /-->
+<section id="about" class="about-mf sect-pt4 route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-shadow-full">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5">
+                                    <div class="about-img">
+                                        <img src="{% static "img/testimonial-2.jpg" %}"
+                                             class="img-fluid rounded b-shadow-a" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 col-md-7">
+                                    <div class="about-info">
+                                        <p><span class="title-s">Profile: </span> <span>Software Engineer</span></p>
+                                        <p><span class="title-s">Email: </span> <span>yinmazatin33@gmail.com</span></p>
+                                        <p><span class="title-s">Citizenship: </span> <span>Cambodian</span></p>
+                                        <p><span class="title-s">Interest: </span> <span>Military Tech, Nuclear Energy,Photography,The intelligence of secret service, Economy & Political,Football</span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="about-me pt-4 pt-md-0">
+                                <div class="title-box-2">
+                                    <h5 class="title-left">
+                                        About me
+                                    </h5>
+                                </div>
+                                <p class="lead">
+                                    Born in Phnom Penh, Cambodia. Commitment to learn “New Thing” every single day in
+                                    life, I do believe
+                                    in the power of imagination & faith to solve any kind of issues. As the word
+                                    "software engineer" means aboard in general but i do specialist in business
+                                    Intelligence and Data Science.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Section Education Start /-->
+<section id="education" class="about-mf sect-pt4 route">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="title-box text-center">
+                <h3 class="title-a">
+                    My Education
+                </h3>
+                <p class="subtitle-a">
+                </p>
+                <div class="line-mf"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="box-shadow-full">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="skill-mf">
+                                <div class="title-box-2">
+                                    <h5 class="title-left">
+                                        Academy
+                                    </h5>
+                                </div>
+                                <span>Software Engineering</span> <span class="pull-right">Grade B</span>
+                                <p><i>2016 - 2020, Bachelor, Kirirom Institute of Technology</i></p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"></div>
+                                </div>
+                                <span>High School Diploma</span> <span class="pull-right">Grade C</span>
+                                <p><i>2008 - 2015, High School Education, Preah Sisowath High School</i></p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="skill-mf">
+                                <div class="title-box-2">
+                                    <h5 class="title-left">
+                                        Language Proficiency
+                                    </h5>
+                                </div>
+                                <span>Khmer</span> <span class="pull-right">100%</span>
+                                <p><i>Mother tongue</i></p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 100%;"
+                                         aria-valuenow="100"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"></div>
+                                </div>
+                                <span>English</span> <span class="pull-right">85%</span>
+                                <p><i>Business Communication</i></p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"></div>
+                                </div>
+                                <span>Japanese</span> <span class="pull-right">20%</span>
+                                <p><i>Novice (Limited Working)</i></p>
+                                <div class="progress">
+                                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20"
+                                         aria-valuemin="0"
+                                         aria-valuemax="100"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Section Education Start /-->
+<!--/ Section Services Star /-->
+<section id="service" class="services-mf route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                        My Skills
+                    </h3>
+                    <p class="subtitle-a">
+                    </p>
+                    <div class="line-mf"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-ios-cog"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">System Analysis and Management</h2>
+                        <p class="s-description text-center">
+                            Strategist in delivery the System Architecture and Operational workflow
+                            for business and project efficiently that can adapt to different
+                            environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-stats-bars"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Business Intelligence</h2>
+                        <p class="s-description text-center">
+                            Experienced in Odoo, SAP Cloud Analytics and other ERP softwares
+                            have opened my eyes to see broader perspective
+                            how important it is to use the digital tool(BI) in Business
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-code-working"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Web Development</h2>
+                        <p class="s-description text-center">
+                            Static Web and Web Application are required
+                            in business nowaday mainly the revolution of PWA that
+                            I've experienced will dominate over the new world of Tech over Native Application.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-ios-pulse-strong"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Data Science</h2>
+                        <p class="s-description text-center">
+                            Shape the future by harnessing the data,
+                            Efficiently using my data analyst skill to propose
+                            a better solutions and create insightful data driven for business or community.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-android-bulb"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Internet Of Thing (IOT)</h2>
+                        <p class="s-description text-center">
+                            Experienced of using the Arduino components,
+                            Installing the hardware, Using the component library, Programming
+                            to the board for learning and create something new with IOT
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="service-ico">
+                        <span class="ico-circle"><i class="ion-camera"></i></span>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Photography</h2>
+                        <p class="s-description text-center">
+                            Photography is my Favorite Habit. I like making photo not because of my excitement only
+                            but
+                            It does create the memory & help people to see
+                            rather than to hear.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Section Services End /-->
+<!--/ Section My Extracurricular works and Social Contribution Star /-->
+<section id="social-activities" class="services-mf route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                        My Extracurricular activities and Social Contributions
+                    </h3>
+                    <p class="subtitle-a">
+                        Besides the education in class, I would like to get my self in to social works for the society.
+                        Join the National and International competition to get out of the comfort zone and growth myself more.
+                    </p>
+                    <div class="line-mf"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="activity-archievement">
+                        <a href="https://www.facebook.com/moeys.gov.kh/videos/2274378896154963/" target="_blank">
+                            <img src="{% static "img/STEMCambodia_newLogo-400x203.png" %}"
+                                 class="img-fluid rounded b-shadow-a"
+                                 alt=""></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Robotic Mentor</h2>
+                        <p class="s-description text-center">
+                            Team Lead as a Robotic Mentor for High school Robotic Competition in
+                            STEM Cambodia Festival 2018, Provide technical support and instructions
+                            to the young high school candidates.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="activity-archievement">
+                        <a href="https://asean.usmission.gov/cda-bocklage-remarks-yseali-stem-regional-workshop-closing-dinner/"
+                           target="_blank">
+                            <img src="{% static "img/YSEALI-high-res-edited.png" %}"
+                                 class="img-fluid rounded b-shadow-a"
+                                 alt=""></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">YSEALI STEM Workshop 2018</h2>
+                        <p class="s-description text-center">
+                            Represented as Cambodian Participant in YSEALI STEM workshop 2018,
+                            ( Awarded as 1 of the top 3 team in best STEM project ).
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="activity-archievement">
+                        <a href="https://www.aseandse.org/"
+                           target="_blank">
+                            <img src="{% static "img/ADSE.png" %}" class="img-fluid rounded b-shadow-a"
+                                 alt=""></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">National and Regional Final in ASEAN Data Science Explorer 2019</h2>
+                        <p class="s-description text-center">
+                            Participant in National Final ASEAN Data Science Explorer
+                            2019 Competition & (Won 1st place to represent Cambodia in ASEAN
+                            Data Science Explorer Regional Final Competition 2019 in Bangkok )
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/ Section  My Extracurricular works and Social Contribution Start End /-->
+<!--/ Section Complete-Course Start /-->
+<section id="complete-course" class="services-mf route">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                        My Completed Courses
+                    </h3>
+                    <p class="subtitle-a">
+                        I am passionate to update myself through participate in differnt
+                        courses and environment. "Explore more, Learn more, Growth more"
+                    </p>
+                    <div class="line-mf"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="activity-archievement">
+                        <a href="https://drive.google.com/drive/folders/1yK777f7S-kmqIkfUEuXTTg9ZRjAkuVm-?usp=sharing"
+                           target="_blank">
+                            <img src="{% static "img/Fundamentals-of-Starting-and-Running-a-Business.jpg" %}"
+                                 class="img-fluid rounded b-shadow-a"
+                                 alt=""></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">YSEALI Business Course</h2>
+                        <p class="s-description text-center">
+                            Completed Course Fundamentals of Starting and
+                            Running a Business, Business Expansion
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="activity-archievement">
+                        <a href="https://www.facebook.com/smartforcambodia/videos/smartedu-university-student-development-program-bootcamp/2038992956155797/"
+                           target="_blank">
+                            <img src="{% static "img/smart_usdp.jpg" %}"
+                                 class="img-fluid rounded b-shadow-a"
+                                 alt=""></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Smart USDP Bootcamp Batch 1 <i>(2018)</i></h2>
+                        <p class="s-description text-center">
+                            Gain a broad understanding of how real it is in business and soft-skill
+                            to solve the real business industry problem in current VUCA world
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="activity-archievement">
+                        <a href="https://drive.google.com/drive/folders/1yK777f7S-kmqIkfUEuXTTg9ZRjAkuVm-?usp=sharing"
+                           target="_blank">
+                            <img src="{% static "img/DS.webp" %}"
+                                 class="img-fluid rounded b-shadow-a"
+                                 alt=""></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Coursera Data Science</h2>
+                        <p class="s-description text-center">
+                            Use R to manipulate data sets and create visualizations to communicate results and
+                            Navigate the data from acquisiton to publication.
+                            <i>( Progressing )</i>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="activity-archievement">
+                        <a href="https://drive.google.com/drive/folders/13mWCJgCdHCoRdWhmCu8CqTFY7rUzOfqO?usp=sharing"
+                           target="_blank">
+                            <img src="{% static "img/codewar.png" %}"
+                                 class="img-fluid rounded b-shadow-a"
+                                 alt=""></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">CodeWar</h2>
+                        <p class="s-description text-center">
+                            On the platform, software developers train on programming challenges known as kata. These discrete programming exercises train a range of skills in a variety of programming languages, and are completed within an online integrated development environment.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="activity-archievement">
+                        <a href="https://drive.google.com/drive/folders/109wBNkMzpQ-iI021IyKMZ_ZyK9QcFK4b?usp=sharing"
+                           target="_blank">
+                            <img src="{% static "img/FRA1.png" %}"
+                                 class="img-fluid rounded b-shadow-a"
+                                 alt=""></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Future Ready ASEAN Digital Citizen</h2>
+                        <p class="s-description text-center">
+                            Boost your digital presence by learning how to engage in professional networks and to use web development tools.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="activity-archievement">
+                        <a href="https://drive.google.com/drive/folders/109wBNkMzpQ-iI021IyKMZ_ZyK9QcFK4b?usp=sharing"
+                           target="_blank">
+                            <img src="{% static "img/FRA2.png" %}"
+                                 class="img-fluid rounded b-shadow-a"
+                                 alt=""></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Future Ready ASEAN Dream Team Player</h2>
+                        <p class="s-description text-center">
+                            Make your team successful by gaining productivity, collaboration and project management skills.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="activity-archievement">
+                        <a href="https://drive.google.com/drive/folders/109wBNkMzpQ-iI021IyKMZ_ZyK9QcFK4b?usp=sharing"
+                           target="_blank">
+                            <img src="{% static "img/FRA3.png" %}"
+                                 class="img-fluid rounded b-shadow-a"
+                                 alt=""></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Future Ready ASEAN Data Wizard</h2>
+                        <p class="s-description text-center">
+                            Get AI ready by understanding, visualizing and making sense of big data sets.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="service-box">
+                    <div class="activity-archievement">
+                        <a href="https://drive.google.com/drive/folders/109wBNkMzpQ-iI021IyKMZ_ZyK9QcFK4b?usp=sharing"
+                           target="_blank">
+                            <img src="{% static "img/FRA4.png" %}"
+                                 class="img-fluid rounded b-shadow-a"
+                                 alt=""></a>
+                    </div>
+                    <div class="service-content">
+                        <h2 class="s-title">Future Ready ASEAN Social Innovator</h2>
+                        <p class="s-description text-center">
+                            Tackle big societal challenges by learning to create technological products and applications.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+<!--/ Section Complete-Course End /-->
+<!--/ Section Archievement Start /-->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="title-box text-center">
+                <h3 class="title-a">
+                    Archievement
+                </h3>
+                <div class="line-mf"></div>
+            </div>
+        </div>
+    </div>
+    <div class="archievement-box">
+        <div class="row">
+            <div class="col-sm-3 col-lg-3">
+                <div class="counter-box counter-box pt-4 pt-md-0">
+                    <div class="counter-ico">
+                        <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
+                    </div>
+                    <div class="counter-num">
+                        <p class="counter">7</p>
+                        <span class="counter-text">COMPLETED PROJECTS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+                <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico">
+                        <span class="ico-circle"><i class="ion-ios-people"></i></span>
+                    </div>
+                    <div class="counter-num">
+                        <p class="counter">2</p>
+                        <span class="counter-text">TOTAL CLIENTS</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+                <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico">
+                        <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
+                    </div>
+                    <div class="counter-num">
+                        <p class="counter">5</p>
+                        <span class="counter-text">AWARD WON</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 col-lg-3">
+                <div class="counter-box pt-4 pt-md-0">
+                    <div class="counter-ico">
+                        <span class="ico-circle"><i class="ion-ios-albums"></i></span>
+                    </div>
+                    <div class="counter-num">
+                        <p class="counter">8</p>
+                        <span class="counter-text">SOCIAL EVENTS CONTRIBUTION</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--/ Section Archievement End /-->
+
+<!--/ Section Contact-Footer Star /-->
+<section class="paralax-mf footer-paralax bg-image sect-mt4 route">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="title-box text-center">
+                <h3 class="title-a">
+                    My Contact
+                </h3>
+                <div class="line-mf"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="contact-mf">
+                    <div id="contact" class="box-shadow-full">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="title-box-2-email-me">
+                                    <h5 class="title-left">
+                                        Email Me
+                                    </h5>
+                                    <br>
+                                    <p class="text-warning">Note : This message will email to Me directly</p>
+                                </div>
+                                <div>
+                                    <form method="post" action=""
+                                          onsubmit="alert('Your Message has been Sent, Thank You');">
+                                        <fieldset>
+                                            {% csrf_token %}
+                                            {% bootstrap_form form %}
+                                        </fieldset>
+                                        <button type="submit" class="button button-a button-big button-rouded">
+                                            {% trans "Send Message" context "Signup form primary action" %}
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="title-box-2 pt-4 pt-md-0">
+                                    <h5 class="title-left">
+                                        Contacts
+                                    </h5>
+                                </div>
+                                <div class="more-info">
+                                    <p class="lead">
+                                        I am happy to collaborate and help you to improve your business!
+                                    </p>
+                                    <ul class="list-ico">
+                                        <li><span class="ion-ios-location"></span> Phnom Penh, Cambodia</li>
+                                        <li><span class="ion-ios-telephone"></span> +85586683137, +85581307102</li>
+                                        <li><span class="ion-email"></span> yinmazatin33@gmail.com</li>
+                                    </ul>
+                                </div>
+                                <div class="socials">
+                                    <ul>
+                                        <li><a href="https://www.facebook.com/zatin.009" target="_blank"><span
+                                                class="ico-circle"><i
+                                                class="ion-social-facebook"></i></span></a></li>
+                                        <li><a href="https://www.instagram.com/zatin009/" target="_blank"><span
+                                                class="ico-circle"><i
+                                                class="ion-social-instagram"></i></span></a></li>
+                                        <li><a href="https://twitter.com/zatin009" target="_blank"><span
+                                                class="ico-circle"><i class="ion-social-twitter"></i></span></a>
+                                        </li>
+                                        <li><a href="https://www.linkedin.com/in/yin-mazatin-240195146/"
+                                               target="_blank"><span class="ico-circle"><i
+                                                class="ion-social-linkedin"></i></span></a></li>
+                                        <li><a href="https://github.com/yinmazatin" target="_blank"><span
+                                                class="ico-circle"><i class="ion-social-github"></i></span></a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="copyright-box">
+                        <p>Developed by<strong> Zatin</strong></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+<!--/ Section Contact-footer End /-->
+
+<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+<!-- JavaScript Libraries -->
+<script src="{% static "lib/jquery/jquery.min.js" %}"></script>
+<script src="{% static "lib/jquery/jquery-migrate.min.js" %}"></script>
+<script src="{% static "lib/popper/popper.min.js" %}"></script>
+<script src="{% static "lib/bootstrap/js/bootstrap.min.js" %}"></script>
+<script src="{% static "lib/easing/easing.min.js" %}"></script>
+<script src="{% static "lib/counterup/jquery.waypoints.min.js" %}"></script>
+<script src="{% static "lib/counterup/jquery.counterup.js" %}"></script>
+<script src="{% static "lib/owlcarousel/owl.carousel.min.js" %}"></script>
+<script src="{% static "lib/lightbox/js/lightbox.min.js" %}"></script>
+<script src="{% static "lib/typed/typed.min.js" %}"></script>
+<!-- Template Main Javascript File -->
+<script src="{% static "js/main.js" %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,14 @@
+asgiref==3.2.3
+beautifulsoup4==4.8.2
+Django==3.0.1
+django-bootstrap4==1.1.1
+django-email==0.1.10
+django-pure-pagination==0.3.0
+django-versatileimagefield==2.0
+Paginator==0.5.1
+Pillow==6.2.1
+psycopg2==2.8.4
+pytz==2019.3
+six==1.13.0
+soupsieve==1.9.5
+sqlparse==0.3.0

@@ -1,0 +1,8 @@
+# Auto detect text files and perform LF normalization
+* text=auto
+*.py[cod]
+.*
+/env-ZationFolio/
+
+# Exported results file
+django-queries-results.html

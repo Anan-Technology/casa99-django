@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+{% load bootstrap_form from bootstrap4 %}
+<html lang="en">
+
+<head>
+    <title>ZATIN</title>
+    {% block meta %}
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="ZatinFolio" name="ZatinFolio">
+        <meta content="Zatin Folio in Work Experienced" name="Zatin Folio in Work Experienced">
+    {% endblock meta %}
+    <!-- Favicons -->
+    <link href="{% static "img/zatin-icon.jpg" %}" rel="icon">
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-155374223-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'UA-155374223-2');
+    </script>
+
+
+    <!-- Bootstrap CSS File -->
+    <link href="{% static "lib/bootstrap/css/bootstrap.min.css" %}" rel="stylesheet">
+    <!-- Libraries CSS Files -->
+    <link href="{% static "lib/font-awesome/css/font-awesome.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/animate/animate.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/ionicons/css/ionicons.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/owlcarousel/assets/owl.carousel.min.css" %}" rel="stylesheet">
+    <link href="{% static "lib/lightbox/css/lightbox.min.css" %}" rel="stylesheet">
+
+    <!-- Main Stylesheet File -->
+    <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <!-- =======================================================
+      Theme Name: DevFolio
+      Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
+      Author: BootstrapMade.com
+      License: https://bootstrapmade.com/license/
+      EDIT BY : ZATIN
+    ======================================================= -->
+
+</head>
+<body id="page-top">
+<!--/ Nav Star /-->
+<nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+    <div class="container ">
+        <a class="navbar-brand js-scroll" href="{% url 'home' %}">ZatinFolio</a>
+        <ul class="pagination">
+            {% if projects.has_other_pages %}
+                {% if projects.has_previous %}
+                    <li><a href="?page={{ projects.previous_page_number }}">&laquo; Prev</a></li>
+                {% else %}
+                    <li class="disabled"><a href="#">&laquo; Prev</a></li>
+                {% endif %}
+                {% for i in projects.paginator.page_range %}
+                    {% if projects.number == i %}
+                        <li class="active"><a href="?page={{ i }}">{{ i }}</a></li>
+                    {% else %}
+                        {% if forloop.counter < 4 %}
+                            <li><a href="?page={{ i }}">{{ i }}</a></li>
+                        {% endif %}
+                    {% endif %}
+                {% endfor %}
+                {% if projects.has_next %}
+                    <li><a href="?page={{ projects.next_page_number }}">Next &raquo; </a></li>
+                {% else %}
+                    <li class="disabled"><a href="#">Next &raquo;</a></li>
+                {% endif %}
+            {% endif %}
+        </ul>
+    </div>
+</nav>
+<!--/ Nav End /-->
+<!--/ Section Archievement Start /-->
+<div class="container">
+    <div class="project-container">
+        {% for i in projects %}
+            <section id="about" class="about-mf sect-pt4-project route">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div class="box-shadow-full box-shadow-full-project">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="row">
+                                            <div class="col-sm-6 col-md-5">
+                                                <div class="about-img">
+                                                    <img src="../media/{{ i.image }}"
+                                                         class="img-fluid rounded b-shadow-a" alt="">
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-6 col-md-7">
+                                                <div class="about-info">
+                                                    <p><span class="title-s">Company : </span>
+                                                        <span>{{ i.company|safe }}</span></p>
+                                                    <p><span
+                                                            class="title-s">Dev Team : </span><span>{{ i.dev_team|safe}}</span>
+                                                    </p>
+                                                    <p><span class="title-s">Duration : </span>
+                                                        <span>{{ i.duration|safe }}</span>
+                                                    </p>
+                                                    <p><span class="title-s">Status : </span>
+                                                        <span>{{ i.status|safe }}</span>
+                                                    </p>
+                                                    <p><span class="title-s">URL : </span> <a href="{{ i.url }}"
+                                                                                              target="_blank">{{ i.url|safe }}</a></span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="about-me pt-4 pt-md-0">
+                                            <div class="title-box-2">
+                                                <h5 class="title-left">
+                                                    {{ i.project_name|safe }}
+                                                </h5>
+                                            </div>
+                                            <p class="lead-project">
+                                                {{ i.description|safe }}
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {% endfor %}
+    </div>
+</div>
+<!--/ Section Archievement End /-->
+
+
+<!-- Template Main Javascript File -->
+<script src="{% static "js/main.js" %}"></script>
+</body>
+
+</html>

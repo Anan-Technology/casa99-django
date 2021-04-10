@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+{% load bootstrap_form from bootstrap4 %}
+<html lang="en">
+
+<head>
+    <title>ZATIN</title>
+    <style>
+        .solid {
+            border: #0B6AB0 solid;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 style="color: #1B1B1B"> Hi Zatin</h1>
+    <p style="color: #1B1B1B">You have received the email from</p>
+    <ul>
+        <li> Name : {{ context.name}}</li>
+        <li> Email : {{ context.email }}</li>
+    </ul>
+    <div class="solid">
+        <h3>Message</h3>
+        <p>{{ context.message }}</p>
+    </div>
+    <div class="footer-paralax">
+        <h5><i>Sends DateTime {{ datetime }}</i></h5>
+    </div>
+</body>
+
+</html>
