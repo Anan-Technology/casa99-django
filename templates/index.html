@@ -25,6 +25,9 @@
 
     <!-- Main Stylesheet File -->
     <link href="{% static 'css/style.css' %}" rel="stylesheet">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.1.0/css/flag-icon.min.css" rel="stylesheet">
+    <!-- Custom styles for this template -->
     <!-- =======================================================
       Theme URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
     ======================================================= -->
@@ -34,42 +37,51 @@
 
 <!--/ Nav Star /-->
 <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
-    <div class="container">
+    <div class="container-fluid">
         <a class="navbar-brand js-scroll" href="#page-top">
             <img src="{% static "img/casa99.svg" %}" alt="casa99_logo" title="casa99 Betting Company" width="183px"
                  height="73px">
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
                 aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
-            <span></span>
-            <span></span>
-            <span></span>
         </button>
         <div class="navbar-collapse collapse justify-content-end" id="navbarDefault">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#home">Sport</a>
+                    <a class="nav-link js-scroll" href="#">Sport</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#about">Live</a>
+                    <a class="nav-link js-scroll" href="#">Casino</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#education">Promo</a>
+                    <a class="nav-link js-scroll" href="#">Cock Fight</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#service">Casino</a>
+                    <a class="nav-link js-scroll" href="#">Keno</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#social-activities">Live Casino </a>
+                    <a class="nav-link js-scroll" href="#">Slot</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#complete-course">1XGames</a>
+                    <button type="submit" class="auth-button">
+                        Login
+                    </button>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#contact">ESports</a>
+                    <button type="submit" class="auth-button" data-toggle="modal"
+                            data-target="#registerationModalCenter">
+                        Registeration
+                    </button>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link js-scroll" href="#contact">More</a>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="dropdown09" data-toggle="dropdown"
+                       aria-haspopup="true" aria-expanded="false"><span class="flag-icon flag-icon-us"> </span> English</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdown09">
+                        <a class="dropdown-item" href="#km"><span class="flag-icon flag-icon-kh"> </span> Khmer</a>
+                        <a class="dropdown-item" href="#ch"><span class="flag-icon flag-icon-cn"> </span> Chinese</a>
+                        <a class="dropdown-item" href="#vn"><span class="flag-icon flag-icon-vn"> </span> Vietnamese</a>
+                    </div>
                 </li>
             </ul>
         </div>
@@ -77,65 +89,330 @@
 </nav>
 <!--/ Nav End /-->
 <!--/ Home Page Promotion /-->
-
+<section id="service" class="services-mf route">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12">
+                <div class="title-box text-center">
+                    <h3 class="title-a">
+                        Home PAGE (WORKING PART)
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="col-md-auto box-shadow-full-registeration">
+                <div class="title-box-2-email-me">
+                    <h5 class="title-left">
+                        Registeration
+                    </h5>
+                    <br>
+                    <p class="blue-small">NEW : <strong>100%</strong> ON THE 1ST DEPOSIT</p>
+                </div>
+                <div>
+                    <form method="post" action="" onsubmit="alert('Your Message has been Sent, Thank You');">
+                        <fieldset>
+                            <input type="hidden" name="csrfmiddlewaretoken"
+                                   value="3Ic3mSclZGnX5qPofkByDWdtQ0NHESxyBZ0LCasqEVJqNrlyGn2dfXeQJSmTWj8f">
+                            <div class="form-group"><input type="text" name="name"
+                                                           class="form-control"
+                                                           placeholder="Username"
+                                                           title="" required=""
+                                                           id="id_name"></div>
+                            <div class="form-group"><input type="password"
+                                                           name="password"
+                                                           class="form-control"
+                                                           placeholder="Password"
+                                                           title="" required=""
+                                                           id="id_email"></div>
+                            <div class="form-group"><input type="number"
+                                                           name="phone"
+                                                           class="form-control"
+                                                           placeholder="Phone Number">
+                            </div>
+                            <small class="blue-small">Enter Affiliate if you have one</small>
+                            <div class="form-group"><input type="number"
+                                                           name="phone"
+                                                           class="form-control"
+                                                           placeholder="Affiliate Code"
+                                                           title="" required=""
+                                                           id="id_email"></div>
+                        </fieldset>
+                        <button type="submit" class="btn btn-primary btn-lg btn-block">
+                            Register
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="col-md-auto">
+                <div class="box-shadow-full-casino">
+                    <a href="#" target="_blank">
+                        <img src="{% static "img/casino/casino.jpg" %}"
+                             class="img-fluid rounded b-shadow-a"
+                             alt=""></a>
+                </div>
+                <br>
+                <div class="w-auto"></div>
+                <div class="box-shadow-full-casino">
+                    <a href="#" target="_blank">
+                        <img src="{% static "img/casino/live_casino.jpg" %}"
+                             class="img-fluid rounded b-shadow-a"
+                             alt=""></a>
+                </div>
+            </div>
+            <div class="col">
+                <div class="box-shadow-full-slideshow">
+                    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="5"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="6"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
+                            <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
+                        </ol>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/slideshow/1.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a "
+                                         alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/slideshow/4444.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/slideshow/3.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/slideshow/4.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/slideshow/5.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/slideshow/6.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/slideshow/7.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/slideshow/8.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/slideshow/9.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
+                            <div class="carousel-item">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/slideshow/10.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
+                        </div>
+                        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
+                           data-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button"
+                           data-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 <!--/ Home Page Promotion /-->
-
-<!--/ Intro Skew Star /-->
-<div id="home" class="intro route bg-image intro-cover">
-    <div class=""></div>
-    <div class="intro-content display-table">
-        <div class="table-cell">
-            <div class="container">
-                <form action="{% url 'projects:projects' %}">
-                    <br><br><br><br><br><br><br><br><br><br><br>
-                    <button type="submit" class="project-button">
-                        {% trans "My Projects" context "Projects Description" %}
-                    </button>
-                </form>
+<!-- Registeration Modal -->
+<div class="modal fade bd-example-modal-lg " tabindex="-1" id="registerationModalCenter" role="dialog"
+     aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content box-shadow-full-registeration-modal">
+            <div class="modal-header">
+                <div class="text-center">
+                    <h5 class="s-title">REGISTERATION</h5>
+                </div>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-4 border-right">
+                        <div class="col-md-auto">
+                            <div class="box-shadow-full-casino">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/casa99.svg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
+                            <br>
+                            <div class="w-auto"></div>
+                            <div class="box-shadow-full-casino">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/casino/live_casino.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-8">
+                        <div>
+                            <form method="post" action="" onsubmit="alert('Your Message has been Sent, Thank You');">
+                                <fieldset>
+                                    <input type="hidden" name="csrfmiddlewaretoken"
+                                           value="3Ic3mSclZGnX5qPofkByDWdtQ0NHESxyBZ0LCasqEVJqNrlyGn2dfXeQJSmTWj8f">
+                                    <div class="form-group"><input type="text" name="name"
+                                                                   class="form-control"
+                                                                   placeholder="Username"
+                                                                   title="" required=""
+                                                                   id="id_name"></div>
+                                    <div class="form-group"><input type="password"
+                                                                   name="password"
+                                                                   class="form-control"
+                                                                   placeholder="Password"
+                                                                   title="" required=""
+                                                                   id="id_email"></div>
+                                    <div class="form-group"><input type="number"
+                                                                   name="phone"
+                                                                   class="form-control"
+                                                                   placeholder="Phone Number">
+                                    </div>
+                                    <small class="blue-small">Enter Affiliate if you have one</small>
+                                    <div class="form-group"><input type="number"
+                                                                   name="phone"
+                                                                   class="form-control"
+                                                                   placeholder="Affiliate Code"
+                                                                   title="" required=""
+                                                                   id="id_email"></div>
+                                </fieldset>
+                                <button type="submit" class="btn btn-primary btn-lg btn-block">
+                                    Register
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 </div>
+<!-- Registeration Modal -->
+
+<!--/ Intro Skew Star /-->
+{#<div id="home" class="intro route bg-image intro-cover">#}
+{#    <div class=""></div>#}
+{#    <div class="intro-content display-table">#}
+{#        <div class="table-cell">#}
+{#            <div class="container-fluid">#}
+{#                <form action="{% url 'projects:projects' %}">#}
+{#                    <br><br><br><br><br><br><br><br><br><br><br>#}
+{#                    <button type="submit" class="project-button">#}
+{#                        {% trans "My Projects" context "Projects Description" %}#}
+{#                    </button>#}
+{#                </form>#}
+{#            </div>#}
+{#        </div>#}
+{#    </div>#}
+{#</div>#}
 <!--/ Intro Skew End /-->
-<section id="about" class="about-mf sect-pt4 route">
-    <div class="container">
+<!--/ SECTION CASA 99 LIVE SCORE /-->
+<!--/ SECTION CASA 99 LIVE SCORE /-->
+
+<!--/ Section CASA99 Partner and Contact /-->
+<section id="casa99-betting-company-partner" class="about-mf sect-pt4 route">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="box-shadow-full">
+                    <div class="text-left">
+                        <h5>CASA99 BETTING COMPANY</h5>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company" width="183px"
+                             height="73px">
+                        <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company" width="183px"
+                             height="73px">
+                        <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company" width="183px"
+                             height="73px">
+                        <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company" width="183px"
+                             height="73px">
+                        <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company" width="183px"
+                             height="73px">
+                    </div>
+                    <br>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="row">
-                                <div class="col-sm-6 col-md-5">
-                                    <div class="about-img">
-                                        <img src="{% static "img/yinmazatin.jpg" %}"
-                                             class="img-fluid rounded b-shadow-a" alt="">
-                                    </div>
-                                </div>
-                                <div class="col-sm-6 col-md-7">
-                                    <div class="about-info">
-                                        <p><span class="title-s">Profile: </span> <span>Software Engineer</span></p>
-                                        <p><span class="title-s">Email: </span> <span>yinmazatin33@gmail.com</span></p>
-                                        <p><span class="title-s">Citizenship: </span> <span>Cambodian</span></p>
-                                        <p><span class="title-s">Interest: </span> <span>Military Tech, Nuclear Energy,Photography,The intelligence of secret service, Economy & Political,Football</span>
-                                        </p>
-                                    </div>
-                                </div>
+                            <div class="text-left">
+                                <h5>CONTACT US</h5>
+                            </div>
+                            <div class="socials">
+                                <ul>
+                                    <li><a href="https://www.facebook.com/zatin.009" target="_blank"><span
+                                            class="ico-circle"><i
+                                            class="ion-social-facebook"></i></span></a></li>
+                                    <li><a href="https://www.instagram.com/zatin009/" target="_blank"><span
+                                            class="ico-circle"><i
+                                            class="ion-social-instagram"></i></span></a></li>
+                                    <li><a href="https://twitter.com/zatin009" target="_blank"><span
+                                            class="ico-circle"><i class="ion-social-twitter"></i></span></a>
+                                    </li>
+                                    <li><a href="https://www.linkedin.com/in/yin-mazatin-240195146/"
+                                           target="_blank"><span class="ico-circle"><i
+                                            class="ion-social-linkedin"></i></span></a></li>
+                                    <li><a href="https://github.com/yinmazatin" target="_blank"><span
+                                            class="ico-circle"><i class="ion-social-github"></i></span></a>
+                                    </li>
+                                </ul>
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="about-me pt-4 pt-md-0">
-                                <div class="title-box-2">
-                                    <h5 class="title-left">
-                                        About me
-                                    </h5>
-                                </div>
-                                <p class="lead">
-                                    Born in Phnom Penh, Cambodia. Commitment to learn “New Thing” every single day in
-                                    life, I do believe
-                                    in the power of imagination & faith to solve any kind of issues. As the word
-                                    "software engineer" means aboard in general but i do specialist in business
-                                    Intelligence and Data Science.
-                                </p>
+                            <div class="text-left">
+                                <h5>PAYMENT METHODS</h5>
+                            </div>
+                            <div class="row">
+                                <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company"
+                                     width="183px"
+                                     height="73px">
+                                <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company"
+                                     width="183px"
+                                     height="73px">
+                                <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company"
+                                     width="183px"
+                                     height="73px">
                             </div>
                         </div>
                     </div>
@@ -143,8 +420,11 @@
             </div>
         </div>
     </div>
+    </div>
+    </div>
 </section>
-<!--/ Section Education Start /-->
+<!--/ Section CASA99 Partner and Contact /-->
+
 <section id="education" class="about-mf sect-pt4 route">
     <div class="row">
         <div class="col-sm-12">
@@ -158,7 +438,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="box-shadow-full">
@@ -226,7 +506,7 @@
 <!--/ Section Education Start /-->
 <!--/ Section Services Star /-->
 <section id="service" class="services-mf route">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="title-box text-center">
@@ -337,7 +617,7 @@
 <!--/ Section Services End /-->
 <!--/ Section My Extracurricular works and Social Contribution Star /-->
 <section id="social-activities" class="services-mf route">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="title-box text-center">
@@ -449,7 +729,7 @@
 <!--/ Section  My Extracurricular works and Social Contribution Start End /-->
 <!--/ Section Complete-Course Start /-->
 <section id="complete-course" class="services-mf route">
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="title-box text-center">
@@ -616,7 +896,7 @@
 </section>
 <!--/ Section Complete-Course End /-->
 <!--/ Section Archievement Start /-->
-<div class="container">
+<div class="container-fluid">
     <div class="row">
         <div class="col-sm-12">
             <div class="title-box text-center">
@@ -690,7 +970,7 @@
             </div>
         </div>
     </div>
-    <div class="container">
+    <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="contact-mf">
@@ -760,7 +1040,7 @@
         </div>
     </div>
     <footer>
-        <div class="container">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-12">
                     <div class="copyright-box">
