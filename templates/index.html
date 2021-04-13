@@ -92,19 +92,19 @@
 </nav>
 <!--/ Nav End /-->
 <!--/ Home Page Promotion /-->
-<section id="service" class="services-mf route">
+<section id="home_page" class="services-mf route">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="title-box text-center">
                     <h3 class="title-a">
-                        Home PAGE (WORKING PART)
+                        Home PAGE
                     </h3>
                 </div>
             </div>
         </div>
-        <div class="row justify-content-md-center">
-            <div class="col-md-auto box-shadow-full-registeration">
+        <div class="row">
+            <div class="col box-shadow-full-registeration">
                 <div class="title-box-2-email-me">
                     <h5 class="title-left">
                         Registeration
@@ -147,23 +147,39 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-auto">
-                <div class="box-shadow-full-casino">
-                    <a href="#" target="_blank">
-                        <img src="{% static "img/casino/casino.jpg" %}"
-                             class="img-fluid rounded b-shadow-a"
-                             alt=""></a>
+            <div class="col">
+                <div class="row">
+                    <div class="box-shadow-full-casino">
+                        <a href="#" target="_blank">
+                            <img class="img-fluid card-img" src="{% static "img/casino/casino.jpg" %}"
+                                 alt="casa99_casino">
+                        </a>
+                        <div class="card-img-overlay d-flex overlay-dark">
+                            <div class="my-auto mx-auto text-center">
+                                <h3 class="card-title text-white">CASINO</h3>
+                                <p class="card-text">Enjoy More than <strong>+50</strong> Games</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <br>
                 <div class="w-auto"></div>
-                <div class="box-shadow-full-casino">
-                    <a href="#" target="_blank">
-                        <img src="{% static "img/casino/live_casino.jpg" %}"
-                             class="img-fluid rounded b-shadow-a"
-                             alt=""></a>
+                <div class="row">
+                    <div class="box-shadow-full-casino">
+                        <a href="#" target="_blank">
+                            <img class="img-fluid card-img" src="{% static "img/casino/live_casino.jpg" %}"
+                                 alt="casa99_casino">
+                        </a>
+                        <div class="card-img-overlay d-flex overlay-dark">
+                            <div class="my-auto mx-auto text-center">
+                                <h3 class="card-title text-white">LIVE CASINO</h3>
+                                <p class="card-text">Enjoy Real Live Casino More than <strong>+100</strong> Tables
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-7">
                 <div class="box-shadow-full-slideshow">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -275,7 +291,7 @@
                     <div class="col-4 border">
                         <div class="col-md-auto">
                             <a href="#" target="_blank">
-                                <img src="{% static "img/casino/casa_sbc.png" %}"
+                                <img src="{% static "img/casino/powered.png" %}"
                                      class="img-fluid" alt="CASA99_SBC_logo"></a>
                         </div>
                     </div>
@@ -324,20 +340,15 @@
 
 <!--/ SECTION CASA 99 LIVE SCORE /-->
 <section id="casa99-livescore" class="about-mf sect-pt4 route">
-    <div class="container-fluid box-shadow-full">
-        <div class="text-center">
-            <h5>CASA99 LIVE SCORE</h5>
+    <div class="container-fluid">
+        <div class="box-shadow-full">
+            <div class="text-center">
+                <h5 class="text-center">CASA99 LIVE SCORE</h5>
+            </div>
+            <div class="container">
+                <script type="text/javascript" src="https://widget.enetscores.com/FWE5270232E20FA0DB"></script>
+            </div>
         </div>
-        <script type="text/javascript" src="https://widget.enetscores.com/FWA275D67C6ABE3240"></script>
-        <script type="text/javascript" src="https://es-cfg.enetscores.com/ws/3.804/FWA275D67C6ABE3240"></script>
-        <link href="https://es-ccss.enetscores.com/wsc/3.804/FWA275D67C6ABE3240" rel="stylesheet">
-        <link href="https://es-css.enetscores.com/css/livescore/soccer/3.804/style.css" rel="stylesheet">
-        <script type="text/javascript"
-                src="https://es-js.enetscores.com/js/migratorydata/v1/lib/migratorydata-client.js"></script>
-        <script type="text/javascript" id="FWA275D67C6ABE3240_d41d8cd98f00b204e9800998ecf8427e"
-                src="https://es-js.enetscores.com/js/widget/livescore/soccer/v2.0.1/default/3.804/livescore.min.js?c=FWA275D67C6ABE3240_d41d8cd98f00b204e9800998ecf8427e"
-                data-code="FWA275D67C6ABE3240" data-output="document"
-                data-stt_json="https://es-cfg.enetscores.com/wsj/3.804/FWA275D67C6ABE3240"></script>
     </div>
 </section>
 <!--/ SECTION CASA 99 LIVE SCORE /-->
@@ -353,31 +364,30 @@
                     </div>
                     <div class="text-left">
                         <h5>Sport Partners:</h5>
+                        <br>
                     </div>
-                    <br>
                     <div class="row">
-                        <div class="col">
+                        <div class="col-md-1">
                             <img src="/static/img/casa_partner/logo-serie_new.png"
                                  class="img-responsive img-rounded"
-                                 style="max-height: 50px; max-width: 50px;" alt="..."></div>
-                        <div class="col">
+                                 style="max-height: 60%; max-width: 60%;" alt="..."></div>
+                        <div class="col-md-1">
                             <img src="/static/img/casa_partner/logo-laliga.png" class="img-responsive img-rounded"
-                                 style="max-height: 50px; max-width: 100px;" alt="..."></div>
-                        <div class="col">
+                                 style="max-height: 100%; max-width: 50%;" alt="..."></div>
+                        <div class="col-md-1">
                             <img src="/static/img/casa_partner/logo-fcb.png" class="img-responsive img-rounded"
-                                 style="max-height: 50px; max-width: 100px;" alt="..."></div>
-                        <div class="col">
+                                 style="max-height: 100%; max-width: 70%;" alt="..."></div>
+                        <div class="col-md-1">
                             <img src="/static/img/casa_partner/logo-liverpool.png"
                                  class="img-responsive img-rounded"
-                                 style="max-height: 50px; max-width: 100px;" alt="..."></div>
-                        <div class="col">
+                                 style="max-height: 100%; max-width: 60%;" alt="..."></div>
+                        <div class="col-md-1">
                             <img src="/static/img/casa_partner/pl.png" class="img-responsive img-rounded"
-                                 style="max-height: 50px; max-width: 100px;" alt="..."></div>
-                        <div class="col">
+                                 style="max-height: 100%; max-width: 100%;" alt="..."></div>
+                        <div class="col-md-1">
                             <img src="/static/img/casa_partner/cl.png" class="img-responsive img-rounded"
-                                 style="max-height: 50px; max-width: 100px;" alt="..."></div>
+                                 style="max-height: 100%; max-width: 70%;" alt="..."></div>
                     </div>
-                    <br>
                     <div class="row">
                         <div class="col-md-6 border-top">
                             <br>
@@ -400,23 +410,23 @@
                                                         class="ion-social-facebook"></i></span></a></li>
                                         </div>
                                         <div class="col">
-                                            <li><a href="https://www.instagram.com/zatin009/" target="_blank"><span
+                                            <li><a href="#" target="_blank"><span
                                                     class="ico-circle"><i
                                                     class="ion-social-instagram"></i></span></a></li>
                                         </div>
                                         <div class="col">
-                                            <li><a href="https://twitter.com/zatin009" target="_blank"><span
+                                            <li><a href="#" target="_blank"><span
+                                                    class="ico-circle"><i class="ion-social-whatsapp"></i></span></a>
+                                            </li>
+                                        </div>
+                                        <div class="col">
+                                            <li><a href="#" target="_blank"><span
                                                     class="ico-circle"><i class="ion-social-twitter"></i></span></a>
                                             </li>
                                         </div>
                                         <div class="col">
-                                            <li><a href="https://www.linkedin.com/in/yin-mazatin-240195146/"
-                                                   target="_blank"><span class="ico-circle"><i
-                                                    class="ion-social-linkedin"></i></span></a></li>
-                                        </div>
-                                        <div class="col">
-                                            <li><a href="https://github.com/yinmazatin" target="_blank"><span
-                                                    class="ico-circle"><i class="ion-social-github"></i></span></a>
+                                            <li><a href="#" target="_blank"><span
+                                                    class="ico-circle"><i class="ion-social-youtube"></i></span></a>
                                             </li>
                                         </div>
                                     </div>
@@ -433,7 +443,7 @@
                                 <div class="col text-center">
                                     <img src="/static/img/casa_payment/aba.jpg"
                                          class="img-responsive img-rounded"
-                                         style="max-height: 50px; max-width: 50px;" alt="...">
+                                         style="max-height: 70%; max-width: 70%;" alt="Aba">
                                     <small>
                                         <figcaption>ABA BANK</figcaption>
                                     </small>
@@ -441,7 +451,7 @@
                                 <div class="col text-center">
                                     <img src="/static/img/casa_payment/ac.jpg"
                                          class="img-responsive img-rounded"
-                                         style="max-height: 50px; max-width: 100px;" alt="...">
+                                         style="max-height: 70%; max-width: 70%;" alt="Aceleda">
                                     <small>
                                         <figcaption>ACELEDA BANK</figcaption>
                                     </small>
@@ -449,14 +459,14 @@
                                 <div class="col text-center">
                                     <img src="/static/img/casa_payment/wing.png"
                                          class="img-responsive img-rounded"
-                                         style="max-height: 50px; max-width: 100px;" alt="...">
+                                         style="max-height: 70%; max-width: 70%;" alt="Wing">
                                     <small>
                                         <figcaption>WING</figcaption>
                                     </small>
                                 </div>
                                 <div class="col text-center">
                                     <img src="/static/img/casa_payment/truemoney.png" class="img-responsive img-rounded"
-                                         style="max-height: 50px; max-width: 100px;" alt="...">
+                                         style="max-height: 70%; max-width: 70%;" alt="Truemoney">
                                     <small>
                                         <figcaption>TRUE MONEY</figcaption>
                                     </small>
@@ -464,7 +474,7 @@
                                 <div class="col text-center">
                                     <img src="/static/img/casa_payment/pipay.png"
                                          class="img-responsive img-rounded"
-                                         style="max-height: 50px; max-width: 100px;" alt="...">
+                                         style="max-height: 70%; max-width: 70%;" alt="Pipay">
                                     <small>
                                         <figcaption>PIPAY</figcaption>
                                     </small>
@@ -475,7 +485,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
     </div>
 </section>
@@ -494,5 +503,6 @@
 <script src="{% static "lib/typed/typed.min.js" %}"></script>
 <!-- Template Main Javascript File -->
 <script src="{% static "js/main.js" %}"></script>
+<script src="{% static "js/close_livescore_ad.js" %}"></script>
 </body>
 </html>

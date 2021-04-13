@@ -24,9 +24,7 @@ SECRET_KEY = 'hhl0ht_ox$b!+l@_t+zch8ef6)=$ra)&-hh3-22i)b5o^4nbl%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["localhost","127.0.0.1"]
-
-
+ALLOWED_HOSTS = ["zatin008.pythonanywhere.com","localhost", "127.0.0.1"]
 
 # Application definition
 
@@ -111,6 +109,14 @@ DATABASES = {
         'PORT': '5432',
     }
 }
+# < DATABASE FOR PYTHONANYWHERE009
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': 'casa99-pythonanywhere',
+#     }
+# }
+# DATABASE FOR PYTHONANYWHERE009 >
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
@@ -165,9 +171,9 @@ STATICFILES_FINDERS = [
 ]
 
 # Email Configuration
-EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
-EMAIL_HOST = "smtp.gmail.com"
-EMAIL_USE_TLS = True
-EMAIL_PORT = 587
-EMAIL_HOST_USER = "zatinmail@gmail.com"
-EMAIL_HOST_PASSWORD = "zatinmail9999911111@"
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = "smtp.gmail.com"
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = "zatinmail@gmail.com"
+# EMAIL_HOST_PASSWORD = "zatinmail9999911111@"
