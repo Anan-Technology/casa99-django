@@ -1172,3 +1172,6 @@ footer .credits a {
     background: black;
     opacity: 70%;
 }
+.w-auto{
+    margin-top: auto;
+}
