@@ -63,6 +63,9 @@
                     <a class="nav-link js-scroll" href="#">Slot</a>
                 </li>
                 <li class="nav-item">
+                    <a class="nav-link js-scroll" href="#casa99-livescore">Live Score</a>
+                </li>
+                <li class="nav-item">
                     <button type="submit" class="auth-button">
                         Login
                     </button>
@@ -174,9 +177,14 @@
                             <li data-target="#carouselExampleIndicators" data-slide-to="7"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="8"></li>
                             <li data-target="#carouselExampleIndicators" data-slide-to="9"></li>
-                            <li data-target="#carouselExampleIndicators" data-slide-to="10"></li>
                         </ol>
                         <div class="carousel-inner">
+                            <div class="carousel-item">
+                                <a href="#" target="_blank">
+                                    <img src="{% static "img/slideshow/0.jpg" %}"
+                                         class="img-fluid rounded b-shadow-a"
+                                         alt=""></a>
+                            </div>
                             <div class="carousel-item active">
                                 <a href="#" target="_blank">
                                     <img src="{% static "img/slideshow/1.jpg" %}"
@@ -185,7 +193,7 @@
                             </div>
                             <div class="carousel-item">
                                 <a href="#" target="_blank">
-                                    <img src="{% static "img/slideshow/4444.jpg" %}"
+                                    <img src="{% static "img/slideshow/2.jpg" %}"
                                          class="img-fluid rounded b-shadow-a"
                                          alt=""></a>
                             </div>
@@ -231,12 +239,6 @@
                                          class="img-fluid rounded b-shadow-a"
                                          alt=""></a>
                             </div>
-                            <div class="carousel-item">
-                                <a href="#" target="_blank">
-                                    <img src="{% static "img/slideshow/10.jpg" %}"
-                                         class="img-fluid rounded b-shadow-a"
-                                         alt=""></a>
-                            </div>
                         </div>
                         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button"
                            data-slide="prev">
@@ -265,27 +267,16 @@
                     <h5 class="s-title">REGISTERATION</h5>
                 </div>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
+                    <span aria-hidden="true">x</span>
                 </button>
             </div>
             <div class="modal-body">
                 <div class="row">
-                    <div class="col-4 border-right">
+                    <div class="col-4 border">
                         <div class="col-md-auto">
-                            <div class="box-shadow-full-casino">
-                                <a href="#" target="_blank">
-                                    <img src="{% static "img/casa99.svg" %}"
-                                         class="img-fluid rounded b-shadow-a"
-                                         alt=""></a>
-                            </div>
-                            <br>
-                            <div class="w-auto"></div>
-                            <div class="box-shadow-full-casino">
-                                <a href="#" target="_blank">
-                                    <img src="{% static "img/casino/live_casino.jpg" %}"
-                                         class="img-fluid rounded b-shadow-a"
-                                         alt=""></a>
-                            </div>
+                            <a href="#" target="_blank">
+                                <img src="{% static "img/casino/casa_sbc.png" %}"
+                                     class="img-fluid" alt="CASA99_SBC_logo"></a>
                         </div>
                     </div>
                     <div class="col-8">
@@ -331,88 +322,153 @@
 </div>
 <!-- Registeration Modal -->
 
-<!--/ Intro Skew Star /-->
-{#<div id="home" class="intro route bg-image intro-cover">#}
-{#    <div class=""></div>#}
-{#    <div class="intro-content display-table">#}
-{#        <div class="table-cell">#}
-{#            <div class="container-fluid">#}
-{#                <form action="{% url 'projects:projects' %}">#}
-{#                    <br><br><br><br><br><br><br><br><br><br><br>#}
-{#                    <button type="submit" class="project-button">#}
-{#                        {% trans "My Projects" context "Projects Description" %}#}
-{#                    </button>#}
-{#                </form>#}
-{#            </div>#}
-{#        </div>#}
-{#    </div>#}
-{#</div>#}
-<!--/ Intro Skew End /-->
 <!--/ SECTION CASA 99 LIVE SCORE /-->
+<section id="casa99-livescore" class="about-mf sect-pt4 route">
+    <div class="container-fluid box-shadow-full">
+        <div class="text-center">
+            <h5>CASA99 LIVE SCORE</h5>
+        </div>
+        <script type="text/javascript" src="https://widget.enetscores.com/FWA275D67C6ABE3240"></script>
+        <script type="text/javascript" src="https://es-cfg.enetscores.com/ws/3.804/FWA275D67C6ABE3240"></script>
+        <link href="https://es-ccss.enetscores.com/wsc/3.804/FWA275D67C6ABE3240" rel="stylesheet">
+        <link href="https://es-css.enetscores.com/css/livescore/soccer/3.804/style.css" rel="stylesheet">
+        <script type="text/javascript"
+                src="https://es-js.enetscores.com/js/migratorydata/v1/lib/migratorydata-client.js"></script>
+        <script type="text/javascript" id="FWA275D67C6ABE3240_d41d8cd98f00b204e9800998ecf8427e"
+                src="https://es-js.enetscores.com/js/widget/livescore/soccer/v2.0.1/default/3.804/livescore.min.js?c=FWA275D67C6ABE3240_d41d8cd98f00b204e9800998ecf8427e"
+                data-code="FWA275D67C6ABE3240" data-output="document"
+                data-stt_json="https://es-cfg.enetscores.com/wsj/3.804/FWA275D67C6ABE3240"></script>
+    </div>
+</section>
 <!--/ SECTION CASA 99 LIVE SCORE /-->
 
 <!--/ Section CASA99 Partner and Contact /-->
-<section id="casa99-betting-company-partner" class="about-mf sect-pt4 route">
+<section id="about-casa99" class="about-mf sect-pt4 route">
     <div class="container-fluid">
         <div class="row">
             <div class="col-sm-12">
                 <div class="box-shadow-full">
-                    <div class="text-left">
+                    <div class="text-center">
                         <h5>CASA99 BETTING COMPANY</h5>
                     </div>
-                    <br>
-                    <div class="row">
-                        <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company" width="183px"
-                             height="73px">
-                        <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company" width="183px"
-                             height="73px">
-                        <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company" width="183px"
-                             height="73px">
-                        <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company" width="183px"
-                             height="73px">
-                        <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company" width="183px"
-                             height="73px">
+                    <div class="text-left">
+                        <h5>Sport Partners:</h5>
                     </div>
                     <br>
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col">
+                            <img src="/static/img/casa_partner/logo-serie_new.png"
+                                 class="img-responsive img-rounded"
+                                 style="max-height: 50px; max-width: 50px;" alt="..."></div>
+                        <div class="col">
+                            <img src="/static/img/casa_partner/logo-laliga.png" class="img-responsive img-rounded"
+                                 style="max-height: 50px; max-width: 100px;" alt="..."></div>
+                        <div class="col">
+                            <img src="/static/img/casa_partner/logo-fcb.png" class="img-responsive img-rounded"
+                                 style="max-height: 50px; max-width: 100px;" alt="..."></div>
+                        <div class="col">
+                            <img src="/static/img/casa_partner/logo-liverpool.png"
+                                 class="img-responsive img-rounded"
+                                 style="max-height: 50px; max-width: 100px;" alt="..."></div>
+                        <div class="col">
+                            <img src="/static/img/casa_partner/pl.png" class="img-responsive img-rounded"
+                                 style="max-height: 50px; max-width: 100px;" alt="..."></div>
+                        <div class="col">
+                            <img src="/static/img/casa_partner/cl.png" class="img-responsive img-rounded"
+                                 style="max-height: 50px; max-width: 100px;" alt="..."></div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-md-6 border-top">
+                            <br>
                             <div class="text-left">
                                 <h5>CONTACT US</h5>
                             </div>
+                            <div class="more-info">
+                                <ul class="list-ico">
+                                    <li><span class="ion-ios-telephone"></span> 012 555 355 / 015 555 355</li>
+                                </ul>
+                            </div>
                             <div class="socials">
                                 <ul>
-                                    <li><a href="https://www.facebook.com/zatin.009" target="_blank"><span
-                                            class="ico-circle"><i
-                                            class="ion-social-facebook"></i></span></a></li>
-                                    <li><a href="https://www.instagram.com/zatin009/" target="_blank"><span
-                                            class="ico-circle"><i
-                                            class="ion-social-instagram"></i></span></a></li>
-                                    <li><a href="https://twitter.com/zatin009" target="_blank"><span
-                                            class="ico-circle"><i class="ion-social-twitter"></i></span></a>
-                                    </li>
-                                    <li><a href="https://www.linkedin.com/in/yin-mazatin-240195146/"
-                                           target="_blank"><span class="ico-circle"><i
-                                            class="ion-social-linkedin"></i></span></a></li>
-                                    <li><a href="https://github.com/yinmazatin" target="_blank"><span
-                                            class="ico-circle"><i class="ion-social-github"></i></span></a>
-                                    </li>
+                                    <div class="row">
+                                        <div class="col">
+                                            <li>
+                                                <a href="https://www.facebook.com/CASA99-103025235115034/"
+                                                   target="_blank"><span
+                                                        class="ico-circle"><i
+                                                        class="ion-social-facebook"></i></span></a></li>
+                                        </div>
+                                        <div class="col">
+                                            <li><a href="https://www.instagram.com/zatin009/" target="_blank"><span
+                                                    class="ico-circle"><i
+                                                    class="ion-social-instagram"></i></span></a></li>
+                                        </div>
+                                        <div class="col">
+                                            <li><a href="https://twitter.com/zatin009" target="_blank"><span
+                                                    class="ico-circle"><i class="ion-social-twitter"></i></span></a>
+                                            </li>
+                                        </div>
+                                        <div class="col">
+                                            <li><a href="https://www.linkedin.com/in/yin-mazatin-240195146/"
+                                                   target="_blank"><span class="ico-circle"><i
+                                                    class="ion-social-linkedin"></i></span></a></li>
+                                        </div>
+                                        <div class="col">
+                                            <li><a href="https://github.com/yinmazatin" target="_blank"><span
+                                                    class="ico-circle"><i class="ion-social-github"></i></span></a>
+                                            </li>
+                                        </div>
+                                    </div>
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="text-left">
-                                <h5>PAYMENT METHODS</h5>
+                        <div class="col-md-6 border-top border-left">
+                            <br>
+                            <div class="text-center">
+                                <h5>OUR PAYMENT METHODS</h5>
                             </div>
-                            <div class="row">
-                                <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company"
-                                     width="183px"
-                                     height="73px">
-                                <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company"
-                                     width="183px"
-                                     height="73px">
-                                <img src="/static/img/casa99.svg" alt="casa99_logo" title="casa99 Betting Company"
-                                     width="183px"
-                                     height="73px">
+                            <br>
+                            <div class="row ">
+                                <div class="col text-center">
+                                    <img src="/static/img/casa_payment/aba.jpg"
+                                         class="img-responsive img-rounded"
+                                         style="max-height: 50px; max-width: 50px;" alt="...">
+                                    <small>
+                                        <figcaption>ABA BANK</figcaption>
+                                    </small>
+                                </div>
+                                <div class="col text-center">
+                                    <img src="/static/img/casa_payment/ac.jpg"
+                                         class="img-responsive img-rounded"
+                                         style="max-height: 50px; max-width: 100px;" alt="...">
+                                    <small>
+                                        <figcaption>ACELEDA BANK</figcaption>
+                                    </small>
+                                </div>
+                                <div class="col text-center">
+                                    <img src="/static/img/casa_payment/wing.png"
+                                         class="img-responsive img-rounded"
+                                         style="max-height: 50px; max-width: 100px;" alt="...">
+                                    <small>
+                                        <figcaption>WING</figcaption>
+                                    </small>
+                                </div>
+                                <div class="col text-center">
+                                    <img src="/static/img/casa_payment/truemoney.png" class="img-responsive img-rounded"
+                                         style="max-height: 50px; max-width: 100px;" alt="...">
+                                    <small>
+                                        <figcaption>TRUE MONEY</figcaption>
+                                    </small>
+                                </div>
+                                <div class="col text-center">
+                                    <img src="/static/img/casa_payment/pipay.png"
+                                         class="img-responsive img-rounded"
+                                         style="max-height: 50px; max-width: 100px;" alt="...">
+                                    <small>
+                                        <figcaption>PIPAY</figcaption>
+                                    </small>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -424,637 +480,7 @@
     </div>
 </section>
 <!--/ Section CASA99 Partner and Contact /-->
-
-<section id="education" class="about-mf sect-pt4 route">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="title-box text-center">
-                <h3 class="title-a">
-                    My Education
-                </h3>
-                <p class="subtitle-a">
-                </p>
-                <div class="line-mf"></div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="box-shadow-full">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="skill-mf">
-                                <div class="title-box-2">
-                                    <h5 class="title-left">
-                                        Academy
-                                    </h5>
-                                </div>
-                                <span>Software Engineering</span> <span class="pull-right">Grade B</span>
-                                <p><i>2016 - 2020, Bachelor, Kirirom Institute of Technology</i></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100"></div>
-                                </div>
-                                <span>High School Diploma</span> <span class="pull-right">Grade C</span>
-                                <p><i>2008 - 2015, High School Education, Preah Sisowath High School</i></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 60%" aria-valuenow="60"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="skill-mf">
-                                <div class="title-box-2">
-                                    <h5 class="title-left">
-                                        Language Proficiency
-                                    </h5>
-                                </div>
-                                <span>Khmer</span> <span class="pull-right">100%</span>
-                                <p><i>Mother tongue</i></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 100%;"
-                                         aria-valuenow="100"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100"></div>
-                                </div>
-                                <span>English</span> <span class="pull-right">85%</span>
-                                <p><i>Business Communication</i></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100"></div>
-                                </div>
-                                <span>Japanese</span> <span class="pull-right">20%</span>
-                                <p><i>Novice (Limited Working)</i></p>
-                                <div class="progress">
-                                    <div class="progress-bar" role="progressbar" style="width: 20%" aria-valuenow="20"
-                                         aria-valuemin="0"
-                                         aria-valuemax="100"></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ Section Education Start /-->
-<!--/ Section Services Star /-->
-<section id="service" class="services-mf route">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="title-box text-center">
-                    <h3 class="title-a">
-                        My Skills
-                    </h3>
-                    <p class="subtitle-a">
-                    </p>
-                    <div class="line-mf"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="service-ico">
-                        <span class="ico-circle"><i class="ion-ios-cog"></i></span>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">System Analysis and Management</h2>
-                        <p class="s-description text-center">
-                            Strategist in delivery the System Architecture and Operational workflow
-                            for business and project efficiently that can adapt to different
-                            environment.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="service-ico">
-                        <span class="ico-circle"><i class="ion-stats-bars"></i></span>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Business Intelligence</h2>
-                        <p class="s-description text-center">
-                            Experienced in Odoo, SAP Cloud Analytics and other ERP softwares
-                            have opened my eyes to see broader perspective
-                            how important it is to use the digital tool(BI) in Business
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="service-ico">
-                        <span class="ico-circle"><i class="ion-code-working"></i></span>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Web Development</h2>
-                        <p class="s-description text-center">
-                            Static Web and Web Application are required
-                            in business nowaday mainly the revolution of PWA that
-                            I've experienced will dominate over the new world of Tech over Native Application.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="service-ico">
-                        <span class="ico-circle"><i class="ion-ios-pulse-strong"></i></span>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Data Science</h2>
-                        <p class="s-description text-center">
-                            Shape the future by harnessing the data,
-                            Efficiently using my data analyst skill to propose
-                            a better solutions and create insightful data driven for business or community.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="service-ico">
-                        <span class="ico-circle"><i class="ion-android-bulb"></i></span>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Internet Of Thing (IOT)</h2>
-                        <p class="s-description text-center">
-                            Experienced of using the Arduino components,
-                            Installing the hardware, Using the component library, Programming
-                            to the board for learning and create something new with IOT
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="service-ico">
-                        <span class="ico-circle"><i class="ion-camera"></i></span>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Photography</h2>
-                        <p class="s-description text-center">
-                            Photography is my Favorite Habit. I like making photo not because of my excitement only
-                            but
-                            It does create the memory & help people to see
-                            rather than to hear.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ Section Services End /-->
-<!--/ Section My Extracurricular works and Social Contribution Star /-->
-<section id="social-activities" class="services-mf route">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="title-box text-center">
-                    <h3 class="title-a">
-                        My Extracurricular activities and Social Contributions
-                    </h3>
-                    <p class="subtitle-a">
-                        Besides the education in class, I would like to get my self in to social works for the society.
-                        Join the National and International competition to get out of the comfort zone and growth myself
-                        more.
-                    </p>
-                    <div class="line-mf"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://www.facebook.com/moeys.gov.kh/videos/2274378896154963/" target="_blank">
-                            <img src="{% static "img/STEMCambodia_newLogo-400x203.png" %}"
-                                 class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Robotic Mentor</h2>
-                        <p class="s-description text-center">
-                            Team Lead as a Robotic Mentor for High school Robotic Competition in
-                            STEM Cambodia Festival 2018, Provide technical support and instructions
-                            to the young high school candidates.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://asean.usmission.gov/cda-bocklage-remarks-yseali-stem-regional-workshop-closing-dinner/"
-                           target="_blank">
-                            <img src="{% static "img/YSEALI-high-res-edited.png" %}"
-                                 class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">YSEALI STEM Workshop 2018</h2>
-                        <p class="s-description text-center">
-                            Represented as Cambodian Participant in YSEALI STEM workshop 2018,
-                            ( Awarded as 1 of the top 3 team in best STEM project ).
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://www.facebook.com/ASEANFoundation/posts/intrigued-by-the-industrial-revolution-40-and-how-it-affects-youth-employability/2845616975503350/"
-                           target="_blank">
-                            <img src="{% static "img/ADSE.png" %}" class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">National and Regional Final in ASEAN Data Science Explorer 2019</h2>
-                        <p class="s-description text-center">
-                            Participant in National Final ASEAN Data Science Explorer
-                            2019 Competition & (Won 1st place to represent Cambodia in ASEAN
-                            Data Science Explorer Regional Final Competition 2019 in Bangkok )
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://www.facebook.com/ASEANFoundation/photos/pcb.3472333982831643/3472332512831790/"
-                           target="_blank">
-                            <img src="{% static "img/Logo-FRA.png" %}" class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">National and Regional Final in Future Ready ASEAN 2020</h2>
-                        <p class="s-description text-center">
-                            Participant in National Final of Future Ready ASEAN 2020, Theme "Promoting ASEAN Culture and
-                            Heritage via Data Science"
-                            & Selected to represent Cambodia in Future Ready ASEAN Competition 2020 via Online
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://www.facebook.com/BMCCambodia2017/photos/a.687848551372458/1772934762863826/"
-                           target="_blank">
-                            <img src="{% static "img/MR.jpg" %}" class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">BMC Cambodia Startup Accelerator & Competition 2020</h2>
-                        <p class="s-description text-center">
-                            Modern Rice is a team from Kirirom Institute of Technology
-                            who was shortlisted from in BMC Cambodia Startup Accelerator & Competition 2020
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-<!--/ Section  My Extracurricular works and Social Contribution Start End /-->
-<!--/ Section Complete-Course Start /-->
-<section id="complete-course" class="services-mf route">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="title-box text-center">
-                    <h3 class="title-a">
-                        My Completed Courses
-                    </h3>
-                    <p class="subtitle-a">
-                        I am passionate to update myself through participate in differnt
-                        courses and environment. "Explore more, Learn more, Growth more"
-                    </p>
-                    <div class="line-mf"></div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://drive.google.com/drive/folders/1yK777f7S-kmqIkfUEuXTTg9ZRjAkuVm-?usp=sharing"
-                           target="_blank">
-                            <img src="{% static "img/Fundamentals-of-Starting-and-Running-a-Business.jpg" %}"
-                                 class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">YSEALI Business Course</h2>
-                        <p class="s-description text-center">
-                            Completed Course Fundamentals of Starting and
-                            Running a Business, Business Expansion
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://www.facebook.com/smartforcambodia/videos/smartedu-university-student-development-program-bootcamp/2038992956155797/"
-                           target="_blank">
-                            <img src="{% static "img/smart_usdp.jpg" %}"
-                                 class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Smart USDP Bootcamp Batch 1 <i>(2018)</i></h2>
-                        <p class="s-description text-center">
-                            Gain a broad understanding of how real it is in business and soft-skill
-                            to solve the real business industry problem in current VUCA world
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://drive.google.com/drive/folders/1yK777f7S-kmqIkfUEuXTTg9ZRjAkuVm-?usp=sharing"
-                           target="_blank">
-                            <img src="{% static "img/DS.webp" %}"
-                                 class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Coursera Data Science</h2>
-                        <p class="s-description text-center">
-                            Use R to manipulate data sets and create visualizations to communicate results and
-                            Navigate the data from acquisiton to publication.
-                            <i>( Progressing )</i>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://drive.google.com/drive/folders/13mWCJgCdHCoRdWhmCu8CqTFY7rUzOfqO?usp=sharing"
-                           target="_blank">
-                            <img src="{% static "img/codewar.png" %}"
-                                 class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">CodeWar</h2>
-                        <p class="s-description text-center">
-                            On the platform, software developers train on programming challenges known as kata. These
-                            discrete programming exercises train a range of skills in a variety of programming
-                            languages, and are completed within an online integrated development environment.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://drive.google.com/drive/folders/109wBNkMzpQ-iI021IyKMZ_ZyK9QcFK4b?usp=sharing"
-                           target="_blank">
-                            <img src="{% static "img/FRA1.png" %}"
-                                 class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Future Ready ASEAN Digital Citizen</h2>
-                        <p class="s-description text-center">
-                            Boost your digital presence by learning how to engage in professional networks and to use
-                            web development tools.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://drive.google.com/drive/folders/109wBNkMzpQ-iI021IyKMZ_ZyK9QcFK4b?usp=sharing"
-                           target="_blank">
-                            <img src="{% static "img/FRA2.png" %}"
-                                 class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Future Ready ASEAN Dream Team Player</h2>
-                        <p class="s-description text-center">
-                            Make your team successful by gaining productivity, collaboration and project management
-                            skills.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://drive.google.com/drive/folders/109wBNkMzpQ-iI021IyKMZ_ZyK9QcFK4b?usp=sharing"
-                           target="_blank">
-                            <img src="{% static "img/FRA3.png" %}"
-                                 class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Future Ready ASEAN Data Wizard</h2>
-                        <p class="s-description text-center">
-                            Get AI ready by understanding, visualizing and making sense of big data sets.
-                        </p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="service-box">
-                    <div class="activity-archievement">
-                        <a href="https://drive.google.com/drive/folders/109wBNkMzpQ-iI021IyKMZ_ZyK9QcFK4b?usp=sharing"
-                           target="_blank">
-                            <img src="{% static "img/FRA4.png" %}"
-                                 class="img-fluid rounded b-shadow-a"
-                                 alt=""></a>
-                    </div>
-                    <div class="service-content">
-                        <h2 class="s-title">Future Ready ASEAN Social Innovator</h2>
-                        <p class="s-description text-center">
-                            Tackle big societal challenges by learning to create technological products and
-                            applications.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-</section>
-<!--/ Section Complete-Course End /-->
-<!--/ Section Archievement Start /-->
-<div class="container-fluid">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="title-box text-center">
-                <h3 class="title-a">
-                    Archievement
-                </h3>
-                <div class="line-mf"></div>
-            </div>
-        </div>
-    </div>
-    <div class="archievement-box">
-        <div class="row">
-            <div class="col-sm-3 col-lg-3">
-                <div class="counter-box counter-box pt-4 pt-md-0">
-                    <div class="counter-ico">
-                        <span class="ico-circle"><i class="ion-checkmark-round"></i></span>
-                    </div>
-                    <div class="counter-num">
-                        <p class="counter">7</p>
-                        <span class="counter-text">COMPLETED PROJECTS</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-lg-3">
-                <div class="counter-box pt-4 pt-md-0">
-                    <div class="counter-ico">
-                        <span class="ico-circle"><i class="ion-ios-people"></i></span>
-                    </div>
-                    <div class="counter-num">
-                        <p class="counter">2</p>
-                        <span class="counter-text">TOTAL CLIENTS</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-lg-3">
-                <div class="counter-box pt-4 pt-md-0">
-                    <div class="counter-ico">
-                        <span class="ico-circle"><i class="ion-ribbon-a"></i></span>
-                    </div>
-                    <div class="counter-num">
-                        <p class="counter">5</p>
-                        <span class="counter-text">AWARD WON</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-sm-3 col-lg-3">
-                <div class="counter-box pt-4 pt-md-0">
-                    <div class="counter-ico">
-                        <span class="ico-circle"><i class="ion-ios-albums"></i></span>
-                    </div>
-                    <div class="counter-num">
-                        <p class="counter">8</p>
-                        <span class="counter-text">SOCIAL EVENTS CONTRIBUTION</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<!--/ Section Archievement End /-->
-
-<!--/ Section Contact-Footer Star /-->
-<section class="paralax-mf footer-paralax bg-image sect-mt4 route">
-    <div class="row">
-        <div class="col-sm-12">
-            <div class="title-box text-center">
-                <h3 class="title-a">
-                    My Contact
-                </h3>
-                <div class="line-mf"></div>
-            </div>
-        </div>
-    </div>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-12">
-                <div class="contact-mf">
-                    <div id="contact" class="box-shadow-full">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="title-box-2-email-me">
-                                    <h5 class="title-left">
-                                        Email Me
-                                    </h5>
-                                    <br>
-                                    <p class="text-warning">Note : This message will email to Me directly</p>
-                                </div>
-                                <div>
-                                    <form method="post" action=""
-                                          onsubmit="alert('Your Message has been Sent, Thank You');">
-                                        <fieldset>
-                                            {% csrf_token %}
-                                            {% bootstrap_form form %}
-                                        </fieldset>
-                                        <button type="submit" class="button button-a button-big button-rouded">
-                                            {% trans "Send Message" context "Signup form primary action" %}
-                                        </button>
-                                    </form>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="title-box-2 pt-4 pt-md-0">
-                                    <h5 class="title-left">
-                                        Contacts
-                                    </h5>
-                                </div>
-                                <div class="more-info">
-                                    <p class="lead">
-                                        I am happy to collaborate and help you to improve your business!
-                                    </p>
-                                    <ul class="list-ico">
-                                        <li><span class="ion-ios-location"></span> Phnom Penh, Cambodia</li>
-                                        <li><span class="ion-ios-telephone"></span> +85586683137</li>
-                                        <li><span class="ion-email"></span> yinmazatin33@gmail.com</li>
-                                    </ul>
-                                </div>
-                                <div class="socials">
-                                    <ul>
-                                        <li><a href="https://www.facebook.com/zatin.009" target="_blank"><span
-                                                class="ico-circle"><i
-                                                class="ion-social-facebook"></i></span></a></li>
-                                        <li><a href="https://www.instagram.com/zatin009/" target="_blank"><span
-                                                class="ico-circle"><i
-                                                class="ion-social-instagram"></i></span></a></li>
-                                        <li><a href="https://twitter.com/zatin009" target="_blank"><span
-                                                class="ico-circle"><i class="ion-social-twitter"></i></span></a>
-                                        </li>
-                                        <li><a href="https://www.linkedin.com/in/yin-mazatin-240195146/"
-                                               target="_blank"><span class="ico-circle"><i
-                                                class="ion-social-linkedin"></i></span></a></li>
-                                        <li><a href="https://github.com/yinmazatin" target="_blank"><span
-                                                class="ico-circle"><i class="ion-social-github"></i></span></a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <footer>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="copyright-box">
-                        <p>Developed by<strong> Zatin</strong></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </footer>
-</section>
-<!--/ Section Contact-footer End /-->
-
 <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
-
 <!-- JavaScript Libraries -->
 <script src="{% static "lib/jquery/jquery.min.js" %}"></script>
 <script src="{% static "lib/jquery/jquery-migrate.min.js" %}"></script>
@@ -1069,5 +495,4 @@
 <!-- Template Main Javascript File -->
 <script src="{% static "js/main.js" %}"></script>
 </body>
-
 </html>

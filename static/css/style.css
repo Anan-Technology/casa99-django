@@ -147,11 +147,11 @@ a:hover {
 /*--/ Sections /--*/
 
 .sect-4 {
-    padding: 4rem 0;
+    padding: 1rem 0;
 }
 
 .sect-pt4 {
-    padding-top: 4rem;
+    padding-top: 1rem;
 }
 
 .sect-pt4-project {
@@ -231,6 +231,15 @@ a:hover {
 .box-shadow-full-registeration{
     margin-left: 10px;
     padding: 3rem 1.25rem;
+    position: relative;
+    background-color: #121212;
+    z-index: 2;
+    box-shadow: 0px 0px 8px 3px #0B6AB0;
+    border-style: dashed #0062d3 100px;
+}
+.box-shadow-full-registeration-modal{
+    margin-left: 10px;
+    padding: 1rem 1rem;
     position: relative;
     background-color: #121212;
     z-index: 2;
@@ -701,7 +710,7 @@ a:hover {
     color: #fff;
 }
 
-.project-button {
+.auth-button {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -715,22 +724,22 @@ a:hover {
     cursor: pointer;
     background-color: transparent;
     color: #0b6ab0;
-    padding: 1rem 1rem;
+    padding: 0.5rem 1rem;
     font-size: 1.0rem;
 }
 
-.project-button:hover {
+.auth-button:hover {
     background: transparent;
     border: solid 2px #0b6ab0;
-    box-shadow: 0px 0px 10px 3px #0B6AB0;
+    box-shadow: 0px 0px 8px 3px #0B6AB0;
 }
 
 /*======================================
 //--//-->   ABOUT
 ======================================*/
 .about-mf .box-shadow-full {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .about-mf .box-shadow-full-project {
@@ -1156,23 +1165,6 @@ footer .credits a {
     padding-right: 1px;
     padding-left: 15px;
 }
-.blue-small{
+.h5-blue .blue-small{
     color: #0B6AB0;
-}
-
-/*// workaround*/
-.intl-tel-input {
-  display: table-cell;
-}
-.intl-tel-input .selected-flag {
-  z-index: 4;
-}
-.intl-tel-input .country-list {
-  z-index: 5;
-}
-.input-group .intl-tel-input .form-control {
-  border-top-left-radius: 4px;
-  border-top-right-radius: 0;
-  border-bottom-left-radius: 4px;
-  border-bottom-right-radius: 0;
 }

@@ -147,11 +147,11 @@ a:hover {
 /*--/ Sections /--*/
 
 .sect-4 {
-    padding: 4rem 0;
+    padding: 1rem 0;
 }
 
 .sect-pt4 {
-    padding-top: 4rem;
+    padding-top: 1rem;
 }
 
 .sect-pt4-project {
@@ -738,8 +738,8 @@ a:hover {
 //--//-->   ABOUT
 ======================================*/
 .about-mf .box-shadow-full {
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .about-mf .box-shadow-full-project {
