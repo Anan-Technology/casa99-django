@@ -147,11 +147,11 @@ a:hover {
 /*--/ Sections /--*/
 
 .sect-4 {
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .sect-pt4 {
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .sect-pt4-project {
@@ -230,7 +230,7 @@ a:hover {
 }
 .box-shadow-full-registeration{
     margin-left: 10px;
-    padding: 3rem 1.25rem;
+    padding: 2rem 1.25rem;
     position: relative;
     background-color: #121212;
     z-index: 2;
@@ -1173,5 +1173,5 @@ footer .credits a {
     opacity: 70%;
 }
 .w-auto{
-    margin-top: auto;
+    margin-top: 3rem;
 }

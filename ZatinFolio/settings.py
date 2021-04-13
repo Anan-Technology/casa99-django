@@ -24,7 +24,7 @@ SECRET_KEY = 'hhl0ht_ox$b!+l@_t+zch8ef6)=$ra)&-hh3-22i)b5o^4nbl%'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["zatin008.pythonanywhere.com","127.0.0.1"]
+ALLOWED_HOSTS = ["zatin008.pythonanywhere.com","localhost", "127.0.0.1"]
 
 # Application definition
 
@@ -110,12 +110,12 @@ SECURE_REFERRER_POLICY = 'strict-origin'
 #     }
 # }
 # < DATABASE FOR PYTHONANYWHERE009
-# DATABASES = {
-#     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': 'casa99-pythonanywhere',
-#     }
-# }
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'casa99-pythonanywhere',
+    }
+}
 # DATABASE FOR PYTHONANYWHERE009 >
 
 # Password validation

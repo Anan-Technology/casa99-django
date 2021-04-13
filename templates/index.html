@@ -104,7 +104,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col col-lg-2 box-shadow-full-registeration">
+            <div class="col box-shadow-full-registeration">
                 <div class="title-box-2-email-me">
                     <h5 class="title-left">
                         Registeration
@@ -147,32 +147,38 @@
                     </form>
                 </div>
             </div>
-            <div class="col-md-auto ">
-                <div class="box-shadow-full-casino">
-                    <a href="#" target="_blank">
-                        <img class="img-fluid card-img" src="{% static "img/casino/casino.jpg" %}" alt="casa99_casino">
-                    </a>
-                    <div class="card-img-overlay d-flex overlay-dark">
-                        <div class="my-auto mx-auto text-center">
-                            <h3 class="card-title text-white">CASINO</h3>
-                            <p class="card-text">Enjoy More than <strong>+50</strong> Games</p>
+            <div class="col">
+                <div class="row">
+                    <div class="box-shadow-full-casino">
+                        <a href="#" target="_blank">
+                            <img class="img-fluid card-img" src="{% static "img/casino/casino.jpg" %}"
+                                 alt="casa99_casino">
+                        </a>
+                        <div class="card-img-overlay d-flex overlay-dark">
+                            <div class="my-auto mx-auto text-center">
+                                <h3 class="card-title text-white">CASINO</h3>
+                                <p class="card-text">Enjoy More than <strong>+50</strong> Games</p>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="w-auto"></div>
-                <div class="box-shadow-full-casino">
-                    <a href="#" target="_blank">
-                        <img class="img-fluid card-img" src="{% static "img/casino/live_casino.jpg" %}" alt="casa99_casino">
-                    </a>
-                    <div class="card-img-overlay d-flex overlay-dark">
-                        <div class="my-auto mx-auto text-center">
-                            <h3 class="card-title text-white">LIVE CASINO</h3>
-                            <p class="card-text">Enjoy Real Live Casino More than <strong>+100</strong> Tables</p>
+                <div class="row">
+                    <div class="box-shadow-full-casino">
+                        <a href="#" target="_blank">
+                            <img class="img-fluid card-img" src="{% static "img/casino/live_casino.jpg" %}"
+                                 alt="casa99_casino">
+                        </a>
+                        <div class="card-img-overlay d-flex overlay-dark">
+                            <div class="my-auto mx-auto text-center">
+                                <h3 class="card-title text-white">LIVE CASINO</h3>
+                                <p class="card-text">Enjoy Real Live Casino More than <strong>+100</strong> Tables</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-7">
                 <div class="box-shadow-full-slideshow">
                     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                         <ol class="carousel-indicators">
@@ -284,7 +290,7 @@
                     <div class="col-4 border">
                         <div class="col-md-auto">
                             <a href="#" target="_blank">
-                                <img src="{% static "img/casino/casa_sbc.png" %}"
+                                <img src="{% static "img/casino/powered.png" %}"
                                      class="img-fluid" alt="CASA99_SBC_logo"></a>
                         </div>
                     </div>
@@ -335,18 +341,9 @@
 <section id="casa99-livescore" class="about-mf sect-pt4 route">
     <div class="container-fluid box-shadow-full">
         <div class="text-center">
-            <h5>CASA99 LIVE SCORE</h5>
+            <h3>CASA99 LIVE SCORE</h3>
         </div>
-        <script type="text/javascript" src="https://widget.enetscores.com/FWA275D67C6ABE3240"></script>
-        <script type="text/javascript" src="https://es-cfg.enetscores.com/ws/3.804/FWA275D67C6ABE3240"></script>
-        <link href="https://es-ccss.enetscores.com/wsc/3.804/FWA275D67C6ABE3240" rel="stylesheet">
-        <link href="https://es-css.enetscores.com/css/livescore/soccer/3.804/style.css" rel="stylesheet">
-        <script type="text/javascript"
-                src="https://es-js.enetscores.com/js/migratorydata/v1/lib/migratorydata-client.js"></script>
-        <script type="text/javascript" id="FWA275D67C6ABE3240_d41d8cd98f00b204e9800998ecf8427e"
-                src="https://es-js.enetscores.com/js/widget/livescore/soccer/v2.0.1/default/3.804/livescore.min.js?c=FWA275D67C6ABE3240_d41d8cd98f00b204e9800998ecf8427e"
-                data-code="FWA275D67C6ABE3240" data-output="document"
-                data-stt_json="https://es-cfg.enetscores.com/wsj/3.804/FWA275D67C6ABE3240"></script>
+        <script type="text/javascript" src="https://widget.enetscores.com/FWE5270232E20FA0DB"></script>
     </div>
 </section>
 <!--/ SECTION CASA 99 LIVE SCORE /-->
@@ -503,5 +500,6 @@
 <script src="{% static "lib/typed/typed.min.js" %}"></script>
 <!-- Template Main Javascript File -->
 <script src="{% static "js/main.js" %}"></script>
+<script src="{% static "js/close_livescore_ad.js" %}"></script>
 </body>
 </html>

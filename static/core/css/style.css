@@ -147,11 +147,11 @@ a:hover {
 /*--/ Sections /--*/
 
 .sect-4 {
-    padding: 1rem 0;
+    padding: 2rem 0;
 }
 
 .sect-pt4 {
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 .sect-pt4-project {
@@ -1173,5 +1173,5 @@ footer .credits a {
     opacity: 70%;
 }
 .w-auto{
-    margin-top: 2.7rem;
+    margin-top: 3rem;
 }
