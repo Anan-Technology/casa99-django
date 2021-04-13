@@ -1168,3 +1168,7 @@ footer .credits a {
 .h5-blue .blue-small{
     color: #0B6AB0;
 }
+.overlay-dark {
+    background: black;
+    opacity: 70%;
+}
