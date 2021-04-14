@@ -83,39 +83,39 @@ WSGI_APPLICATION = 'ZatinFolio.wsgi.application'
 # If set to a non-zero integer value, the SecurityMiddleware sets the HTTP Strict Transport Security header on all responses that do not already have it.
 SECURE_HSTS_SECONDS = 31536000 
 # If True, the SecurityMiddleware redirects all non-HTTPS requests to HTTPS (except for those URLs matching a regular expression listed in SECURE_REDIRECT_EXEMPT).
-SECURE_SSL_REDIRECT = False
+SECURE_SSL_REDIRECT = True
 # Whether to use a secure cookie for the session cookie. If this is set to True, the cookie will be marked as “secure”, which means browsers may ensure that the cookie is only sent under an HTTPS connection.
 # Leaving this setting off isn’t a good idea because an attacker could capture an unencrypted session cookie with a packet sniffer and use the cookie to hijack the user’s session.
-SESSION_COOKIE_SECURE = False
+SESSION_COOKIE_SECURE = True
 # Whether to use a secure cookie for the CSRF cookie. If this is set to True, the cookie will be marked as “secure”, which means browsers may ensure that the cookie is only sent with an HTTPS connection.
-CSRF_COOKIE_SECURE = False
+CSRF_COOKIE_SECURE = True
 # If True, the SecurityMiddleware adds the includeSubDomains directive to the HTTP Strict Transport Security header. It has no effect unless SECURE_HSTS_SECONDS is set to a non-zero value.
-SECURE_HSTS_INCLUDE_SUBDOMAINS = False
+SECURE_HSTS_INCLUDE_SUBDOMAINS = True
 # If True, the SecurityMiddleware adds the preload directive to the HTTP Strict Transport Security header. It has no effect unless SECURE_HSTS_SECONDS is set to a non-zero value
-SECURE_HSTS_PRELOAD = False
+SECURE_HSTS_PRELOAD = True
 # If configured, the SecurityMiddleware sets the Referrer Policy header on all responses that do not already have it to the value provided.
 SECURE_REFERRER_POLICY = 'strict-origin'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'casa99',
-        'USER': 'casa99',
-        'PASSWORD': 'casa99',
-        'HOST': '127.0.0.1',
-        'PORT': '5432',
-    }
-}
-# < DATABASE FOR PYTHONANYWHERE009
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.sqlite3',
-#         'NAME': 'casa99-pythonanywhere',
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'casa99',
+#         'USER': 'casa99',
+#         'PASSWORD': 'casa99',
+#         'HOST': '127.0.0.1',
+#         'PORT': '5432',
 #     }
 # }
+# < DATABASE FOR PYTHONANYWHERE009
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': 'casa99-pythonanywhere',
+    }
+}
 # DATABASE FOR PYTHONANYWHERE009 >
 
 # Password validation
@@ -169,3 +169,11 @@ STATICFILES_FINDERS = [
     "django.contrib.staticfiles.finders.FileSystemFinder",
     "django.contrib.staticfiles.finders.AppDirectoriesFinder",
 ]
+
+# Email Configuration
+# EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+# EMAIL_HOST = "smtp.gmail.com"
+# EMAIL_USE_TLS = True
+# EMAIL_PORT = 587
+# EMAIL_HOST_USER = "zatinmail@gmail.com"
+# EMAIL_HOST_PASSWORD = "zatinmail9999911111@"
