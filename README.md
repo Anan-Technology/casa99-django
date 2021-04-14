@@ -6,7 +6,7 @@ Developer Folio using Bootstrap and Django  -->
 - python 3.8 >
 - Postgres 13 or 9.5
 
-##Installation Instruction<
+##Installation Instruction
 - Clone repository
 - Create virtualenv python
 - Activate virualenv 
