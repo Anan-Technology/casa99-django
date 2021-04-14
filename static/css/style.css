@@ -221,22 +221,16 @@ a:hover {
 
 .box-shadow-full {
     padding: 3rem 1.25rem;
-    position: relative;
     background-color: #121212;
     margin-bottom: 3rem;
-    z-index: 2;
     box-shadow: 0px 0px 8px 3px #0B6AB0;
     border-style: dashed #0062d3 100px;
 }
 .box-shadow-full-registeration{
-    margin-left: 10px;
-    margin-right: 20px;
+    margin-left: -15px;
     padding: 2rem 1.25rem;
-    position: relative;
     background-color: #121212;
-    z-index: 2;
     box-shadow: 0px 0px 8px 3px #0B6AB0;
-    border-style: dashed #0062d3 100px;
 }
 .box-shadow-full-registeration-modal{
     margin-left: 10px;
