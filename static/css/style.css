@@ -1243,3 +1243,19 @@ footer .credits a {
   background-position: center;
   background-size: cover;
 }
+.live-api{
+  height: 700px;
+  overflow-y: scroll;
+}
+.partner-wrap{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.partner-wrap span{
+  height: 100px;
+  margin-bottom: 15px;
+}
+.partner-wrap span img{
+  height: 100%;
+}
