@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'ZatinFolio.urls'
+ROOT_URLCONF = 'casa99.urls'
 PROJECT_ROOT = os.path.normpath(os.path.join(os.path.dirname(__file__), ".."))
 
 TEMPLATES = [
@@ -78,7 +78,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'ZatinFolio.wsgi.application'
+WSGI_APPLICATION = 'casa99.wsgi.application'
 
 # If set to a non-zero integer value, the SecurityMiddleware sets the HTTP Strict Transport Security header on all responses that do not already have it.
 SECURE_HSTS_SECONDS = 31536000 
