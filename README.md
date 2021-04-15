@@ -1,4 +1,4 @@
-# ZatinFolio-Django
+# casa99-Django
 <!-- Basic-Folio-Branch
 Developer Folio using Bootstrap and Django  -->
 
@@ -16,3 +16,8 @@ Developer Folio using Bootstrap and Django  -->
 https://www.digitalocean.com/community/tutorials/how-to-set-up-a-scalable-django-app-with-digitalocean-managed-databases-and-spaces
 - runserver" python manage.py runserver " ( REMEMBER : ALWAYS ACTIVATE ENVIRONMENT )
 
+###Vichea Note Django Dev cmd
+- Build assete
+`python manage.py collectstatic`
+- Runserver Development
+`python manage.py runserver`
