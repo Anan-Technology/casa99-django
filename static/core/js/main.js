@@ -3,6 +3,14 @@
     var nav = $('nav');
     var navHeight = nav.outerHeight();
 
+    $('#main-slide').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        items: 1
+
+    });
+
     $('.navbar-toggler').on('click', function () {
         if (!$('#mainNav').hasClass('navbar-reduce')) {
             $('#mainNav').addClass('navbar-reduce');
@@ -18,7 +26,7 @@
         }
     });
     $('.back-to-top').click(function () {
-        $('html, body').animate({scrollTop: 0}, 1500, 'easeInOutExpo');
+        $('html, body').animate({ scrollTop: 0 }, 1500, 'easeInOutExpo');
         return false;
     });
 
@@ -94,5 +102,5 @@
 })(jQuery);
 
 $("input").intlTelInput({
-  utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js"
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/8.4.6/js/utils.js"
 });
